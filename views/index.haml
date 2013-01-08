@@ -49,6 +49,7 @@
     var image = "/images/icons/number_" + (i+1) + ".png";
     var icon = L.icon({
         iconUrl: image,
+        iconSize: [32, 37]
     });
     candidate = candidates[i];
     L.marker([candidate.lat, candidate.lon], {icon: icon, title: candidate.name}).addTo(map);  
