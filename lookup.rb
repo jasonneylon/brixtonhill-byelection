@@ -55,4 +55,5 @@ candidates.each do |candidate|
   geocoded_candiates << candidate.merge({lat: location["lat"], lon: location["lon"]})
 end
 
+puts geocoded_candiates.inspect
 puts geocoded_candiates.to_json

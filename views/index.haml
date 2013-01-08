@@ -1,29 +1,35 @@
         
-%h1 Brixton Hill By Election 2013
-%article.thirteen.columns.alpha
+%h1 Brixton Hill By-election 2013
+%article.twelve.columns.alpha
   %section
     %p
       #map
       
 
-%div.three.columns.omega
+%div.four.columns.omega
   %aside.stats
     %section
-      %h3 Smog then
-      %img(style="width: 100px; height: 100px" src="/images/1950s.png")
-      %h3 Smog now
-      %img(style="width: 100px; height: 100px" src="http://www.eastlondonadvertiser.co.uk/polopoly_fs/smog_over_london_1_873935!image/3188945018.jpg_gen/derivatives/landscape_490/3188945018.jpg")
-
-  %aside.stats
-    %section
-      %h3 Brixton Hill
-
+      %h3 Candidates
+      %ul 
+        - candidates.each_with_index do |candidate, index|
+          %li
+            %strong
+              = "#{index+1}: #{candidate[:name]}"
+            %br
+            = "#{candidate[:postcode]}"
+            %br
+            = "#{candidate[:party]}"
+      %div 
+        You will need to zoom out to see The Socialist Party candidate
+      %div 
+        List is taken from
+        %a(href="http://www.lambeth.gov.uk/Services/CouncilDemocracy/DemocracyElections/ElectionsVoting/StatementOfPersonsNominatedBrixtonHill.htm") Lambeth council website
 
 
 :javascript
   var ward = { "type": "Polygon", "coordinates": [ [ [ -0.129118, 51.459750 ], [ -0.128939, 51.459750 ], [ -0.128140, 51.459752 ], [ -0.126901, 51.459749 ], [ -0.126484, 51.459736 ], [ -0.126135, 51.459708 ], [ -0.124919, 51.459611 ], [ -0.124371, 51.459582 ], [ -0.124139, 51.459568 ], [ -0.123870, 51.459571 ], [ -0.123352, 51.459616 ], [ -0.122775, 51.459683 ], [ -0.121937, 51.459768 ], [ -0.121467, 51.459822 ], [ -0.121025, 51.459885 ], [ -0.120596, 51.459970 ], [ -0.119943, 51.460131 ], [ -0.119511, 51.460234 ], [ -0.118264, 51.460547 ], [ -0.117765, 51.460682 ], [ -0.117074, 51.460884 ], [ -0.116751, 51.460997 ], [ -0.116206, 51.461134 ], [ -0.115868, 51.461198 ], [ -0.115784, 51.461218 ], [ -0.115808, 51.461181 ], [ -0.115944, 51.460987 ], [ -0.116943, 51.459290 ], [ -0.117203, 51.458849 ], [ -0.117268, 51.458740 ], [ -0.118372, 51.456866 ], [ -0.119094, 51.455665 ], [ -0.119448, 51.455084 ], [ -0.120080, 51.454095 ], [ -0.120603, 51.453312 ], [ -0.120957, 51.452736 ], [ -0.121166, 51.452411 ], [ -0.121796, 51.451458 ], [ -0.122068, 51.451003 ], [ -0.121501, 51.450794 ], [ -0.121206, 51.450667 ], [ -0.120689, 51.450363 ], [ -0.120184, 51.450052 ], [ -0.120498, 51.449594 ], [ -0.120744, 51.449242 ], [ -0.119887, 51.448024 ], [ -0.119602, 51.447600 ], [ -0.119244, 51.447117 ], [ -0.118762, 51.446415 ], [ -0.118481, 51.446029 ], [ -0.118252, 51.445648 ], [ -0.118107, 51.445439 ], [ -0.117968, 51.445281 ], [ -0.117800, 51.445168 ], [ -0.117610, 51.445064 ], [ -0.117317, 51.444938 ], [ -0.117752, 51.444625 ], [ -0.118998, 51.443688 ], [ -0.119408, 51.443790 ], [ -0.120647, 51.444113 ], [ -0.121271, 51.444228 ], [ -0.121912, 51.444376 ], [ -0.122284, 51.444578 ], [ -0.122794, 51.444765 ], [ -0.123533, 51.444892 ], [ -0.124401, 51.445124 ], [ -0.127960, 51.446635 ], [ -0.128530, 51.446850 ], [ -0.128391, 51.446977 ], [ -0.128230, 51.447103 ], [ -0.127656, 51.447318 ], [ -0.127331, 51.447460 ], [ -0.127390, 51.447516 ], [ -0.127647, 51.447742 ], [ -0.127564, 51.447776 ], [ -0.128386, 51.448459 ], [ -0.128530, 51.448543 ], [ -0.128711, 51.449000 ], [ -0.129024, 51.449750 ], [ -0.129118, 51.449955 ], [ -0.129420, 51.450569 ], [ -0.130137, 51.450670 ], [ -0.130430, 51.450710 ], [ -0.130533, 51.450725 ], [ -0.130818, 51.450768 ], [ -0.130539, 51.451505 ], [ -0.130495, 51.451619 ], [ -0.130474, 51.451668 ], [ -0.130197, 51.452398 ], [ -0.129726, 51.453780 ], [ -0.129456, 51.454649 ], [ -0.129393, 51.454986 ], [ -0.129319, 51.455383 ], [ -0.129240, 51.455817 ], [ -0.129183, 51.456268 ], [ -0.129123, 51.456772 ], [ -0.129097, 51.457012 ], [ -0.129032, 51.457524 ], [ -0.128989, 51.457808 ], [ -0.128956, 51.458250 ], [ -0.128986, 51.458722 ], [ -0.129013, 51.458888 ], [ -0.129039, 51.459039 ], [ -0.129052, 51.459114 ], [ -0.129119, 51.459698 ], [ -0.129117, 51.459707 ], [ -0.129118, 51.459750 ] ] ] };
 
-  var candiates = [{"name":"Timothy Peter Briggs","party":"Conservative Party","postcode":"SW4 9RJ","lat":"51.4592333039634","lon":"-0.138048550387006"},{"name":"Andrew James Child","party":"Green Party","postcode":"SW2 4DS","lat":"51.4514894","lon":"-0.125009524016465"},{"name":" Elizabeth Eirwen Jones","party":"UK Independence Party (UKIP)","postcode":"SW4 7HE","lat":"51.4647832","lon":"-0.1304024"},{"name":"Daniel Peter Lambert","party":"The Socialist Party (GB)","postcode":"BR7 5DS","lat":"51.4204366","lon":"0.0604686"},{"name":"Liz Maffei","party":"Liberal Democrats","postcode":"SW4 7NN","lat":"51.4612611","lon":"-0.1324097"},{"name":"Steve Nally","party":"Trade Unionist and Socialist Coalition","postcode":"SW8 1UA","lat":"51.4825139","lon":"-0.1184079"},{"name":"Martin Andreas Tiedemann","party":"Labour and Co-operative Party Candidate","postcode":" SW2 5BA","lat":"51.4550832","lon":"-0.1224233"}];
+  var candidates = #{candidates.to_json}
 
   var map = L.map('map').setView([51.455, -0.12], 13);
     L.tileLayer('http://{s}.tile.cloudmade.com/a4b6a4d5369b461fb6d2f97248537c88/997/256/{z}/{x}/{y}.png', {
@@ -37,9 +43,14 @@
       }
   }).addTo(map);
   
-  for (var i = 0; i < candiates.length; i++) 
+  for (var i = 0; i < candidates.length; i++) 
   {
-    candiate = candiates[i];
-    L.marker([candiate.lat, candiate.lon], {title: candiate.name}).addTo(map);  
+  
+    var image = "/images/icons/number_" + (i+1) + ".png";
+    var icon = L.icon({
+        iconUrl: image,
+    });
+    candidate = candidates[i];
+    L.marker([candidate.lat, candidate.lon], {icon: icon, title: candidate.name}).addTo(map);  
   }
   
