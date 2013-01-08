@@ -1,0 +1,129 @@
+@mixin gradiant($r, $g, $b, $density:0.95) 
+	background: #4C95AF
+	background: -moz-linear-gradient(center bottom, rgba(76,149,175,0.1) 5%, rgba($r,$g,$b,0.9) 95%)
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(76,149,175,0.1)), color-stop(0.95, rgba($r,$g,$b,$density)))
+
+.overlay1
+	@include gradiant(165,206,136, 0.40)
+.overlay2
+	@include gradiant(105,167,84, 0.50)
+.overlay3
+	@include gradiant(45,136,41, 0.60)
+.overlay4
+	@include gradiant(240,192,151, 0.70)
+.overlay5
+	@include gradiant(255,154,93, 0.75)
+.overlay6
+	@include gradiant(246,99,37, 0.80)
+.overlay7
+	@include gradiant(221,0,21, 0.85)
+.overlay8
+	@include gradiant(169,0,17, 0.90)
+.overlay9
+	@include gradiant(124,0,4)
+.overlay10
+	@include gradiant(0,0,0)
+
+.level1
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(165,206,136)
+.level2
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(105,167,84)
+.level3
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(45,136,41)
+.level4
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(240,192,151)
+.level5
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(255,154,93)
+.level6
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(246,99,37)
+.level7
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(221,0,21)
+.level8
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(169,0,17)
+.level9
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(124,0,4)
+.level10
+	float: left
+	margin-right: 10px
+	width: 20px
+	height: 20px
+	@include gradiant(0,0,0)
+
+
+
+.legend1
+	width: 20px
+	height: 20px
+	@include gradiant(165,206,136)
+.legend2
+	width: 20px
+	height: 20px
+	@include gradiant(105,167,84)
+.legend3
+	width: 20px
+	height: 20px
+	@include gradiant(45,136,41)
+.legend4
+	width: 20px
+	height: 20px
+	@include gradiant(240,192,151)
+.legend5
+	width: 20px
+	height: 20px
+	@include gradiant(255,154,93)
+.legend6
+	width: 20px
+	height: 20px
+	@include gradiant(246,99,37)
+.legend7
+	width: 20px
+	height: 20px
+	@include gradiant(221,0,21)
+.legend8
+	width: 20px
+	height: 20px
+	@include gradiant(169,0,17)
+.legend9
+	width: 20px
+	height: 20px
+	@include gradiant(124,0,4)
+.legend10
+	width: 20px
+	height: 20px
+	@include gradiant(0,0,0)
